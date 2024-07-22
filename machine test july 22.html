@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .heading {
+            font-size: 53px;
+        }
+
+        .content1 {
+            font-size: large;
+        }
+
+        .button1 {
+            border-radius: 30px;
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        .box1 {
+            margin-top: 50px;
+            background-color: gray;
+            width: 550px;
+            padding: 15px 15px 15px 15px;
+            border-radius: 30px;
+        }
+
+        .box2 {
+            margin-top: 50px;
+            margin-left: 30px;
+            width: 550px;
+            padding: 15px 15px 15px 15px;
+            background-color: gray;
+            border-radius: 30px;
+        }
+
+        .box3 {
+            margin-top: 50px;
+            margin-right: 20px;
+            width: 700px;
+            padding: 15px 15px 15px 15px;
+            background-color: gray;
+            border-radius: 30px;
+            display: flex;
+        }
+
+        .b1 {
+            position: relative;
+        }
+
+        .circle {
+            position: absolute;
+            left: 280px;
+            top: 110px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .carousel slide {
+            height: 635px;
+            width: 100%;
+            padding-left: 50px;
+            margin-top: 160px;
+            z-index: o;
+        }
+
+        .left {
+            padding-left: 50px;
+            padding-top: 80px;
+        }
+
+        /*.icon{
+            height: 100px;
+            width: 100px;
+        }*/
+        :hover.box1 {
+            background-color: rgb(26, 155, 140);
+        }
+
+        :hover.box2 {
+            background-color: rgb(26, 155, 140);
+        }
+
+        :hover.box3 {
+            background-color: rgb(26, 155, 140);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 left">
+                <div class="row">
+                    <h1 class="heading">We build your dream house with our passion</h1>
+                    <p class="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium sit
+                        adipisci quo
+                        explicabo necessitatibus dicta praesentium vero dolorum, rerum ea ab ipsum harum fuga doloribus
+                    </p>
+                    <button class="button1">Get started</button>
+                </div>
+                <div class="row">
+                    <div style="display: flex; justify-content: space-between;height: 200px;">
+                        <div class="col box1">
+                            <p><b>178+</b></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et labore quas aut eius
+                                corporis
+                            </p>
+                        </div>
+                        <div class="col box2">
+                            <p><b>362</b></p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat neque, quos libero</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col box3">
+                        <div>
+                            <h3><b>Title</b></h3><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, id adipisci! Quos, iste magni
+                                hic
+                                ea
+                                similique facilis recusandae, velit ratione commodi ipsam impedit obcaecati repellendus,
+                                at
+                                et
+                                quibusdam fuga!</p>
+                        </div>
+                        <img src="tanjiro-kamado-3840x4734-10064.jpg" alt="" style="height: 150px;width: 300px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 b1">
+                <img src="satoru-gojo-black-7680x4320-14684.png" alt="gojo" class="circle">
+
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-top: 160px;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="satoru-gojo-black-7680x4320-14684.png" class="d-block w-100"style="height: 635px;width: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tanjiro-kamado-3840x4734-10064.jpg" class="d-block w-100" style="height: 635px;width: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="waves.jpeg" class="d-block w-100" style="height: 635px;width: 100%;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
